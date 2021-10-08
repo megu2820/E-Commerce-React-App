@@ -1,8 +1,6 @@
 SHOP NOW 🔥
 
-**See the application in action and test it yourself !!
-Deployment Link
-https://shop-now-megu-community.netlify.app/ **
+**See the application in action and test it yourself !! Deployment Link-  https://shop-now-megu-community.netlify.app/**
 
 This is a E-commerce website build on React.js at the frontend and all the backend is handled by Commerce.js(A powerful eCommerce SDK for building custom cart and checkout experiences. Commerce.js is trusted by developers around the world to deliver API driven eCommerce into web, mobile, augmented, and virtual shopping experiences).
 It uses react-hook-form package to create custom forms and material-ui for the styling, react-credit-card-input package to create the credit card input fields.I have integrated the testing payment gateway provided by commerce.js in the application. 
@@ -10,6 +8,7 @@ It uses react-hook-form package to create custom forms and material-ui for the s
 **The testing card number provided by commerce.js is
 4242 4242 4242 4242   04 / 24  242
 Putting in any other card number will lead u to the error page ❌ displaying a error message along with a button leading u back to the store.**
+
 App Flow-
 
 1. The user lands on the landing Page
