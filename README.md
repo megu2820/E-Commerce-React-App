@@ -49,6 +49,13 @@ App Flow-
 
 ![Confirmatory Page](https://user-images.githubusercontent.com/66476812/136559074-4ec924db-79c8-42cb-9f00-ac6a5056e1ea.png)
 
+🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥 **The main punch , the transaction is real and not mocked (Don't worry no money is gonna be taken)** 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+**The user will receive a confirmatory email too from commerce.js containing all the shipping details , the status of the order, the order summary and the payment method on the email address specified in the shipping address form. A sample of this email can be found in the repo in Customer recieved Email.pdf**
+
+**The merchant will also receive an email displaying a new order with customer's name. A sample of this email can be found in the repo in Mrechant Received Email.pdf (Ignore the spelling mistake i got that spelling mistake in file name) and by clicking on view order details the merchant will be directed to his dashboard on commerce.js where he can see all the details of the order in his dashboard**
+
+
 **Error Page ❌**
 
 ![Error Page](https://user-images.githubusercontent.com/66476812/136559240-8f881175-3c2d-4d47-a487-b34947580a93.png)
