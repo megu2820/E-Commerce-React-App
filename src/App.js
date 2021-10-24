@@ -3,11 +3,12 @@ import React, { useState,useEffect} from 'react'
 import {commerce} from './lib/Commerce'
 import {Products,Navbar,Cart,Checkout} from './Components'
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
-
+import Login from './Components/Login/Login'
+import ProtectedRoute from './Components/Login/ProtectedRoute'
 
 
 function App() {
-
+   
 
    // States
    const [products,setProducts] = useState([]);
@@ -15,12 +16,26 @@ function App() {
    const[order,setOrder]= useState({});
    const [errorMessage,setErrorMessage]= useState('');
    
+   
+   
+   localStorage.removeItem('logoutMessage'); // to ensure that the login page is rendered with no logoutMessage intially(no previous stored states from localstorage)
    // functions
+   
+  const LoginUser = async (email)=>{
+     console.log(email);
+    await commerce.customer.login(email,new URL('/products?token={token}', window.location.origin).href).then((token)=>{
+      
+      localStorage.setItem("LoggedIn", true);
+      });
+  }
 
    const fetchProducts= async ()=>{
       const {data} = await commerce.products.list();
+    
       setProducts(data);
+      
    }
+
 
    const fetchCart = async ()=>{
       setCart(await commerce.cart.retrieve());
@@ -74,36 +89,49 @@ function App() {
    useEffect(() => {
       fetchProducts();
       fetchCart();
+     
+      
    }, [])
 
-  
-   return (
-      <Router>
+
+   return ( <Router>
          <div>
          <Navbar totalItems={cart.total_items}/>
          <Switch>
-          <Route exact path="/">
-            <Products products={products} onAddToCart={handleAddToCart}/>
+         <Route exact path="/">
+           <Login LoginUser= {LoginUser}/>
           </Route>
-          <Route exact path="/cart">
-            <Cart cart={cart}
+          <ProtectedRoute exact
+                    path="/products"
+                
+                  onAddToCart={handleAddToCart}
+                   products={products}
+                 component={Products}
+                
+             />
+         
+          <ProtectedRoute exact path="/cart"
+            cart={cart}
+            
              handleUpdateCartQty={handleUpdateCartQty}
              handleRemoveFromCart={handleRemoveFromCart}
              handleEmptyCart={handleEmptyCart}
+             component={Cart}
             />   
-          </Route>
-          <Route exact path="/checkout">
-            <Checkout
+         
+          <ProtectedRoute exact path="/checkout"
+             
              cart={cart}
              order={order}
              error={errorMessage}
              onCaptureCheckout={handleCaptureCheckout}
+             component={Checkout}
              />
-          </Route>
+       
          </Switch>
          </div>
       </Router>
-      
+    
    )
 }
 

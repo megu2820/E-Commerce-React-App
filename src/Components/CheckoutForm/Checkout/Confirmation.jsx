@@ -17,7 +17,7 @@ const Confirmation=({order}) =>{
                   <Typography variant='subtitle2'>Order ref: {order.customer_reference}</Typography>
                 </div>
                 <br/>
-                <Button component={Link} to="/" variant="outlined" type="button" style={{display: 'grid'}} >Back to Store</Button>
+                <Button component={Link} to="/products" variant="outlined" type="button" style={{display: 'grid'}} >Back to Store</Button>
             </>
         ):(<div style={{display: 'flex',justifyContent: 'center',alignItems: 'center',}}><CircularProgress/></div>)
     )

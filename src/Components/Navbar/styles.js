@@ -19,11 +19,12 @@ export default makeStyles((theme) => ({
     alignItems: 'center',
     display: 'flex',
     textDecoration: 'none',
+    color: '#fff',
   },
   image: {
-    marginRight: '10px',
-    height: '50px',
-    width: '50px',
+    borderRadius: '50%',
+        marginRight: '10px',
+        height: '35px'
   },
   menuButton: {
     marginRight: theme.spacing(2),

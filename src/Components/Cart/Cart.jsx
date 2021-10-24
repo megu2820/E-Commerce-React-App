@@ -9,7 +9,7 @@ const Cart=({cart, handleUpdateCartQty,handleRemoveFromCart, handleEmptyCart}) =
    
     const EmptyCart = () => (   // instant return to show empty cart
         <Typography variant="subtitle1" >You have no items in your shopping cart,
-        <Link to='/' classes={classes.link}>start adding some</Link>!  
+        <Link to='/products?token=' classes={classes.link}>start adding some</Link>!  
         </Typography> 
       );
   
