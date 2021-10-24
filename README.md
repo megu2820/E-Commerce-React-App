@@ -1,5 +1,6 @@
 # Easy Order (Version 2.0💡 of Shop Now 🔥)
 **If you find it worth it , feel free to give this repo a star⭐⭐**
+
 **See the application in action and test it yourself !! Deployment Link-  https://shop-now-megu-community.netlify.app/**
 
 This is a E-commerce website build on React.js at the frontend and all the backend is handled by Commerce.js(A powerful eCommerce SDK for building custom cart and checkout experiences. Commerce.js is trusted by developers around the world to deliver API driven eCommerce into web, mobile, augmented, and virtual shopping experiences).
@@ -21,6 +22,12 @@ Updated App Flow-
 
 2. The user lands on the landing Page
 
+Latest Look in version 2.0
+
+![Screenshot (49)](https://user-images.githubusercontent.com/66476812/138589983-d2e9b94b-6c3b-4681-8c75-623b19375dd5.png)
+
+Old Look in version 1.0
+
 ![Landing Page](https://user-images.githubusercontent.com/66476812/136556820-d298021d-1007-4d58-be4b-47833d25bf51.png)
 
 **Here the user can add the products to his cart **
@@ -29,11 +36,23 @@ Updated App Flow-
 
 **Empty Cart**
 
+Latest Look in version 2.0
+
+![Screenshot (50)](https://user-images.githubusercontent.com/66476812/138590034-c1cc4b1f-2695-4c99-a6c0-28b0fed8ed5c.png)
+
+Old Look in version 1.0
+
 ![Empty Cart](https://user-images.githubusercontent.com/66476812/136557274-83e00c0a-1ecb-437d-be91-a516498e57e9.png)
 
 **The user can click on start adding some link and go to the landing page or he/she may click on the logo of the app to go to the landing page at any step of the application flow**
 
 **Filled Cart**
+
+Latest Look in version 2.0
+
+![Screenshot (51)](https://user-images.githubusercontent.com/66476812/138590073-1db281f0-ce3a-47ab-8156-adc2e7395df6.png)
+
+Old Look in version 1.0
 
 ![Filled Cart](https://user-images.githubusercontent.com/66476812/136557341-88a3ad1f-b40d-46d1-8b86-a6df0fed3864.png)
 
@@ -41,11 +60,23 @@ Updated App Flow-
 
 4. By Clicking on the checkout the user will be directed to the checkout route where the shipping address form will be rendered.
 
+Latest Look in version 2.0
+
+![Screenshot (52)](https://user-images.githubusercontent.com/66476812/138590121-c0044c07-a6d7-428a-85c0-6b9598eaaa1a.png)
+
+Old Look in version 1.0
+
 ![Shipping address form](https://user-images.githubusercontent.com/66476812/136558243-79e6684e-6b93-4ace-81bf-79744134ad40.png)
 
 **Here the user needs to fill his details and click on Next in order to go to the payment step and back to go back to his cart**
 
 5. By clicking on the Pay button the payment detail form will be rendered showing a order summary of the customer's order along with a credit card input field.
+
+Latest Look in version 2.0
+
+![Screenshot (53)](https://user-images.githubusercontent.com/66476812/138590165-8bb005e2-2496-4ab0-8bc5-3c02e23fbbcf.png)
+
+Old Look in version 1.0
 
 ![Payment Details Form](https://user-images.githubusercontent.com/66476812/136558771-aadf5ac3-5d1a-4836-aee2-2bc40e6edb06.png)
 
@@ -54,6 +85,12 @@ Updated App Flow-
 6. By clicking on the Pay button the user might see the confirmatory page or the error page depending on whether the transaction was successfull 
 
 **Confirmatory Page💥 **
+
+Latest Look in version 2.0
+
+![Screenshot (55)](https://user-images.githubusercontent.com/66476812/138590277-1f6de826-f8bc-451f-a029-c7545105c891.png)
+
+Old Look in version 1.0
 
 ![Confirmatory Page](https://user-images.githubusercontent.com/66476812/136559074-4ec924db-79c8-42cb-9f00-ac6a5056e1ea.png)
 
@@ -65,6 +102,12 @@ Updated App Flow-
 
 
 **Error Page ❌**
+
+Latest Look in version 2.0
+
+![Screenshot (54)](https://user-images.githubusercontent.com/66476812/138590200-383150ac-568a-47c9-84ad-db6a79fd64dd.png)
+
+Old Look in version 1.0
 
 ![Error Page](https://user-images.githubusercontent.com/66476812/136559240-8f881175-3c2d-4d47-a487-b34947580a93.png)
 
