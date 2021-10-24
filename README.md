@@ -1,23 +1,31 @@
-SHOP NOW 🔥
-
+# Easy Order (Version 2.0💡 of Shop Now 🔥)
+**If you find it worth it , feel free to give this repo a star⭐⭐**
 **See the application in action and test it yourself !! Deployment Link-  https://shop-now-megu-community.netlify.app/**
 
 This is a E-commerce website build on React.js at the frontend and all the backend is handled by Commerce.js(A powerful eCommerce SDK for building custom cart and checkout experiences. Commerce.js is trusted by developers around the world to deliver API driven eCommerce into web, mobile, augmented, and virtual shopping experiences).
 It uses react-hook-form package to create custom forms and material-ui for the styling, react-credit-card-input package to create the credit card input fields.I have integrated the testing payment gateway provided by commerce.js in the application. 
 
+**Version 2.0💡 has customer authorization via magic links to make the protected routes only be accessible if the customer is logged in and the authorization system is implemented by the use of magic links sent to the email address of the customer**
+
 **The testing card details provided by commerce.js is
 4242 4242 4242 4242   04 / 24  242
 Putting in any other card number will lead u to the error page ❌ displaying a error message along with a button leading u back to the store.**
 
-App Flow-
+Updated App Flow-
 
-1. The user lands on the landing Page
+1. The user lands on the login page->enters email id->magic link sent confirmatory message-> magic link sent received on the email.
+
+![Magic link sent confirmatory message](https://user-images.githubusercontent.com/66476812/138589638-db90716a-bb87-45bb-9065-67e1f39e6d44.png)
+
+**After clicking on the magic link recieved the customer will be redirected to a new tab and will be able to access the protected routes(Do shopping after authorization). A sample of the magic link email can be found in the repo as-> Magic Link Email Sample.pdf**
+
+2. The user lands on the landing Page
 
 ![Landing Page](https://user-images.githubusercontent.com/66476812/136556820-d298021d-1007-4d58-be4b-47833d25bf51.png)
 
 **Here the user can add the products to his cart **
 
-2  Now Depending on whether his cart is empty or filled he may see the empty cart component or filled cart component.
+3  Now Depending on whether his cart is empty or filled he may see the empty cart component or filled cart component.
 
 **Empty Cart**
 
@@ -31,19 +39,19 @@ App Flow-
 
 **Here the user can increment or decrement the quantity of any product , can remove a particular product from his cart , can empty the complete cart , can go back to the landing/Products Page of the app or can proceed further by clicking on the checkout button**
 
-3. By Clicking on the checkout the user will be directed to the checkout route where the shipping address form will be rendered.
+4. By Clicking on the checkout the user will be directed to the checkout route where the shipping address form will be rendered.
 
 ![Shipping address form](https://user-images.githubusercontent.com/66476812/136558243-79e6684e-6b93-4ace-81bf-79744134ad40.png)
 
 **Here the user needs to fill his details and click on Next in order to go to the payment step and back to go back to his cart**
 
-4. By clicking on the Pay button the payment detail form will be rendered showing a order summary of the customer's order along with a credit card input field.
+5. By clicking on the Pay button the payment detail form will be rendered showing a order summary of the customer's order along with a credit card input field.
 
 ![Payment Details Form](https://user-images.githubusercontent.com/66476812/136558771-aadf5ac3-5d1a-4836-aee2-2bc40e6edb06.png)
 
 **Here the user needs to input his credit card details**
 
-5. By clicking on the Pay button the user might see the confirmatory page or the error page depending on whether the transaction was successfull 
+6. By clicking on the Pay button the user might see the confirmatory page or the error page depending on whether the transaction was successfull 
 
 **Confirmatory Page💥 **
 
@@ -60,11 +68,17 @@ App Flow-
 
 ![Error Page](https://user-images.githubusercontent.com/66476812/136559240-8f881175-3c2d-4d47-a487-b34947580a93.png)
 
+7. The user can log out of the application by clicking the logout button in the navbar, he/she will be logged out and will get redirected to the login route displaying a successful logout message.
+
+![Logout Message](https://user-images.githubusercontent.com/66476812/138589777-cbaa19e8-91b7-40e9-b906-98eb95ab52cc.png)
+
+
 **The complete design is fully mobile responsive. You can find the screenshots of the mobile view in the repo as Design images->Mobile View**
 
-I haven't implemented the login and logout functionality yet but i m gonna get that thing here in the future commits 😅
+As I said I am back with authorization 💥 (Earlier: -I haven't implemented the login and logout functionality yet but i m gonna get that thing here in the future commits 😅)
 
-**If you find it worth it , feel free to give this repo a star⭐⭐**
+
+
 
 # Getting Started with Create React App
 
