@@ -1,7 +1,7 @@
 # Easy Order (Version 2.0💡 of Shop Now 🔥)
 **If you find it worth it , feel free to give this repo a star⭐⭐**
 
-**See the application in action and test it yourself !! Deployment Link-  https://easy-order-megu-community.netlify.app/**
+**See the application in action and test it yourself !! Deployment Link-  https://shop-now-megu-community.netlify.app/**
 
 This is a E-commerce website build on React.js at the frontend and all the backend is handled by Commerce.js(A powerful eCommerce SDK for building custom cart and checkout experiences. Commerce.js is trusted by developers around the world to deliver API driven eCommerce into web, mobile, augmented, and virtual shopping experiences).
 It uses react-hook-form package to create custom forms and material-ui for the styling, react-credit-card-input package to create the credit card input fields.I have integrated the testing payment gateway provided by commerce.js in the application. 
