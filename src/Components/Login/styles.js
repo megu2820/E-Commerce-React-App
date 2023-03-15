@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles(()=>({
     imagediv:{
-        backgroundImage: `url('https://www.ecommercetimes.com/article_images/story_graphics_xlarge/xl-2020-ecommerce-optimization-1.jpg')`,
+        backgroundImage: `url('https://www.ecommercetimes.com/wp-content/uploads/sites/5/2021/12/xl-2020-ecommerce-optimization-1.jpg')`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: '100% 100%',
         backgroundPosition: 'center center',
